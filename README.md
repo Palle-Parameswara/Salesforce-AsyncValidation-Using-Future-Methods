@@ -1,6 +1,20 @@
 # Salesforce-AsyncValidation-Using-Future-Methods
 External website used: https://app.abstractapi.com/api/phone-validation/tester
 
+Future Methods Advantages and Disadvantages
+Advantages:
+Asynchronous Processing: Future methods allow non-blocking, asynchronous execution, improving performance and reducing delays in trigger execution.
+Governor Limits: Future methods bypass synchronous callout limits, allowing API calls to be made without blocking the trigger’s execution.
+Simple to Implement: @future(callout=true) is easy to implement for making callouts asynchronously without complex logic.
+Improved API Management: Helps manage API call limits by offloading callouts to the background.
+Disadvantages:
+Unpredictable Execution Timing: Future methods run asynchronously, so you can’t guarantee when the API call will be processed, which may affect timing for dependent operations.
+Governor Limits for Future Calls: Limited to 50 future method calls per transaction, which may be a bottleneck for large datasets.
+Data Consistency Issues: Future methods are outside the trigger transaction, meaning failures won’t roll back, potentially causing inconsistent data.
+Debugging Complexity: It can be harder to debug future methods due to their asynchronous nature.
+No Job Chaining: Future methods don’t support chaining jobs or passing data between future calls, unlike Queueable Apex.
+
+
 Step-by-Step Guide:
 Step 1: Create External Credentials (Custom)
 External Credentials are used in Salesforce to store the credentials for an external service, typically used for integration. You can define External Credentials for services like phone/email validation APIs.
