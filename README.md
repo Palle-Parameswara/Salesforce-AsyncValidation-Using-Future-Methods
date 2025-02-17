@@ -42,7 +42,6 @@ External Credentials are used in Salesforce to store the credentials for an exte
    - For Phone Validation API and Email Validation API, you will likely choose **Custom** for your authentication type.
 
 5. **Fill Out Required Information**:
-   - **Authentication Protocol**: Depending on the API, select either **OAuth 2.0**, **No Authentication**, or other available methods.
    - **Principal Type**: Select **Named Principal** if you are using a single set of credentials for the entire org.
 
 6. **Save**:
@@ -190,6 +189,3 @@ Here’s the `ContactValidationTrigger` to call the future methods:
 - [Phone Validation API - Abstract API](https://app.abstractapi.com/api/phone-validation/tester)
 - [YouTube Tutorial](https://www.youtube.com/watch?v=sE6MX8vz1Y0)
 
----
-
-This guide should help you set up phone and email validation in Salesforce with the necessary external credentials, named credentials, permission sets, and Apex logic. Let me know if you need any further assistance!
