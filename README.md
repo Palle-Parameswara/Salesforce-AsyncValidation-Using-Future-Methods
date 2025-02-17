@@ -18,6 +18,9 @@ Authentication Protocol: Depending on the API, select either OAuth 2.0, No Authe
 Principal Type: Select Named Principal if you are using a single set of credentials for the entire org.
 Save:
 After filling in the required fields, click Save to create the external credential.
+![image](https://github.com/user-attachments/assets/8e38030c-8785-462d-80f4-6091595bf99d)
+![image](https://github.com/user-attachments/assets/16dfee29-2274-41db-bf0c-e98406d7545f)
+
 
 
 Step 2: Create Named Credentials
@@ -38,6 +41,10 @@ If you're using OAuth 2.0, select OAuth 2.0 and configure the Consumer Key, Cons
 Link External Credentials:
 In the External Credential section, choose the External Credential you created in Step 1.
 Save the Named Credential.
+![image](https://github.com/user-attachments/assets/53c6972f-f004-4e7d-8956-4d1b9c99cb05)
+![image](https://github.com/user-attachments/assets/956b5fc4-2aa5-45b5-8317-fcd39a6702cc)
+
+
 
 Step 3: Create Principals for External Credentials
 In Salesforce, Principals refer to the identity used for accessing external systems. You’ll need to create a Principal for the External Credentials to assign it to the Named Credential.
@@ -56,6 +63,7 @@ Authentication Method: Choose the method matching your integration (e.g., Basic 
 Associate Principal with External Credential:
 Link the Principal to the External Credential you created earlier in Step 1.
 Save the Principal.
+![image](https://github.com/user-attachments/assets/76db1dc5-131a-44d0-8720-e872de76188f)
 
 Step 4: Assign the External Credential Principal to Permission Sets
 Now that you’ve created the External Credentials, Named Credentials, and Principals, the next step is to assign them to the Permission Set so that users can access these external services securely.
@@ -94,6 +102,9 @@ Click New Field.
 Create the following fields:
 Email Deliverability (Email_Validation_Status__c): Type: Picklist (Valid/Invalid).
 Quality Score (Quality_Score__c): Type: Text (0-100 scale).
+Add all these to layout.
+![image](https://github.com/user-attachments/assets/fe5ef553-a923-43f3-95a3-8d7219fa97dd)
+
 
 Step 6: Update the Contact Validation Controller with Future Methods
 
