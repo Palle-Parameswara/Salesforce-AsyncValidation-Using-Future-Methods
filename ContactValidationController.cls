@@ -1,6 +1,6 @@
 public class ContactValidationController {
-    private static final String Phone_API_KEY = 'd90b7df724114ec59a326b81afca3e4e'; // Replace with your Phone actual API key
-    private static final String Email_API_KEY = '2c507050a4ee45c3857780ddc2347f40'; // Replace with your Email actual API key
+    private static final String Phone_API_KEY = ''; // Replace with your Phone actual API key
+    private static final String Email_API_KEY = ''; // Replace with your Email actual API key
 
     // Future method for phone validation
     @future (callout=true)
