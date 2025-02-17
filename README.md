@@ -1,4 +1,6 @@
 # Salesforce-AsyncValidation-Using-Future-Methods
+External website used: https://app.abstractapi.com/api/phone-validation/tester
+
 Step-by-Step Guide:
 Step 1: Create External Credentials (Custom)
 External Credentials are used in Salesforce to store the credentials for an external service, typically used for integration. You can define External Credentials for services like phone/email validation APIs.
@@ -113,3 +115,5 @@ Here’s the #ContactValidationController class with @future(callout=true) metho
 
 Step 7: Trigger to Call Future Methods
 #ContactValidationTrigger 
+
+References: https://www.youtube.com/watch?v=sE6MX8vz1Y0
