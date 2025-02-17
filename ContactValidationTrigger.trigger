@@ -1,4 +1,4 @@
-trigger ContactValidationTrigger on Contact (before insert, before update) {
+trigger ContactValidationTrigger on Contact (after insert, after update) {
     for (Contact c : Trigger.new) {
         
         // Phone Validation: Check if the phone number field is not empty and has been updated
